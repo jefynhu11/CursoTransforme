@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("imagens/florestaLogo.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    background-color: black;
+    border-radius: 15%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+}
+
+img#fotoPerfil  {
+    width: 150px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: black;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+li{
+    list-style: none; /* tirar ponto */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: black;
+}
+
+li:hover {
+    background-color: aqua;
+    color: black; /*NAO FUNCIONA*/
+    border-bottom: 2px;
+}
+
+main {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    /* height: 650px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao {
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+}
+
+section#home {
+    display: flex;
+    align-items: center;
+}
+
+section#portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+section#servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+section#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: chocolate;
+}
+
+#texto {
+    margin: 0;
+    padding: 0;
+}
+
+#principalFoto {
+    width: 280px;
+    margin: 20px;
+    border-radius: 15%;
+}
+
+.branco {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}

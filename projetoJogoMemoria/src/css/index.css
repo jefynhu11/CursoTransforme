@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url("../assets/imgs/background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogo {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.cartao {
+    width: calc(25% - 10px); 
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cartao:active{
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+
+.cartao.virado{
+    transform: rotateY(180deg);
+}
+
+.frente-cartao, .verso-cartao {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: white;  se for foto usa SVG */
+    backface-visibility: hidden;
+}
+
+.frente-cartao{
+    transform: rotateY(180deg);
+}
+
+#recordes{
+    margin-top: 30px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    display: none;
+    margin-left: 15px;
+}
+
+td{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+}
+
+.botao {
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.botao:hover {
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,31 @@
+#azul {
+    background-color: blue;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+#azul:hover {
+    background-color: aqua;
+    color: black;
+    transition: 1.5s;
+}
+
+#verde {
+    background-color: green;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+#verde:hover {
+    background-color: greenyellow;
+    color: black;
+    transition: 1.5s;
+}
